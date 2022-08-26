@@ -6,9 +6,10 @@
 % Packages and other includes
 % Pagination
 \usepackage[letterpaper, margin=1in]{geometry}
+
 %
 % Graphics, floats, tables
-\usepackage{graphicx, color, float, array}
+\usepackage{graphicx, xcolor, float, array}
 \graphicspath{{image/}}
 %
 % Fonts
@@ -32,6 +33,7 @@ urlcolor={blue}]{hyperref}
 %
 % Math mode version of "r" column type (requires array package)
 \newcolumntype{R}{>{$}r<{$}}
+\newcommand{\brian}[1]{{\color{orange}{#1}}}
 % Title, authors, date
 \title{\textbf{Extra Scientific Notation and  Significant Figures Problem}}
 \date{Aug 23, 2022}
@@ -47,9 +49,15 @@ to 2 significant figures.
 
 a) $(4.0 \times 10^{-2})(1.5 \times 10^4)$
 
+\brian{$6.0\times 10^2$}
+
 b) $(3.0 \times 10^5)^2$
 
+\brian{$9.0 \times 10^{10}$}
+
 c) $1.8 \times 10^4 - 8.9 \times 10^1$
+
+\brian{$1.8\times 10^4$}
 
 \textbf{Number of Significant Figures}
 
@@ -57,21 +65,49 @@ c) $1.8 \times 10^4 - 8.9 \times 10^1$
 
 a) 0.060580
 
+\brian{5 sig figs}
+
 b) 6709.201
 
+\brian{7 sig figs}
+
 c) 14800
+
+\brian{3 sig figs}
 
 \textbf{Combining Operations and Significant Figures}
 
 3) Using a calculator, express the answers to the following calculations with
 the proper number of significant figures:
 
-a) $\frac{1202}{14.83 + 7.6}$
+a) \begin{align*}
+  \frac{1202}{14.83 + 7.6}
+\end{align*}
 
-b) $\frac{1.0 \times 10^{-2} \text{g} - 1.2 \times 10^{-3}\text{g}}{1.579 \times 10^{-1} \text{cm}}$
+
+\brian{
+  \begin{align*}
+    \frac{1202}{14.83+7.6} & = \frac{1202}{22.\underline{4}3} \\
+    & = 53.6
+  \end{align*}
+
+  Apply the addition rule. Underlined $4$ indicates the number of
+  significant figures for the resulting addition. Hence, the final answer
+  should have 3 significant figures.
+  }
+
+b) \begin{align*}
+  \frac{1.0 \times 10^{-2} \text{g} - 1.2 \times 10^{-3}\text{g}}{1.579 \times 10^{-1} \text{cm}}
+\end{align*}
+
+\brian{Same applies here as in part a). The answer is 0.06 g/cm}
 
 c) $(9.2 \times 11.7) + 5.98$
 
+\brian{110}
+
 d) $(6.2 \text{g/mL} \times 1.95 \text{mL}) + 0.73 \text{g}$
+
+\brian{13 g}
 
 \end{document}

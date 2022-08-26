@@ -8,7 +8,7 @@
 \usepackage[letterpaper, margin=1in]{geometry}
 %
 % Graphics, floats, tables
-\usepackage{graphicx, color, float, array}
+\usepackage{graphicx, xcolor, float, array}
 \graphicspath{{image/}}
 %
 % Fonts
@@ -32,6 +32,8 @@ urlcolor={blue}]{hyperref}
 %
 % Math mode version of "r" column type (requires array package)
 \newcolumntype{R}{>{$}r<{$}}
+\newcommand{\brian}[1]{{\color{orange}{#1}}}
+
 % Title, authors, date
 \title{\textbf{Extra Dimensional Analysis}}
 \date{Aug 23, 2022}
@@ -44,27 +46,43 @@ urlcolor={blue}]{hyperref}
 
 a) 32.5 dag to its equivalent in cg.
 
+\brian{325 cg}
+
 b) 44 mm to nm.
+
+\brian{$4.4\times 10^{7}$}
 
 c) 25 cm$^3$ to L.
 
+\brian{0.025 L}
+
 d) 2.89 GJ to MJ.
 
+\brian{2,890 MJ}
+
 e) 172 $\mu\text{s}$ to ds.
+
+\brian{0.00172 ds}
 
 2) A sample of air contains $2.33 \times 10^{-4}$ mg of lead per mL of gas.
 This air passes through an office, the volume of which is $3.25 \times 10^4$ L.
 Seven people normally work in this office. How many $\mu\text{g}$ of lead will each
 person in the office receive from this sample of air?
 
+\brian{$1.08\times 10^6 \mu\text{g/person}$}
+
 3) If a laser beam fired from the moon takes 1.40s to reach Earth, what is the
 distance in meters between the moon and Earth? Light travels in a vacuum
 at a speed of $3.00 \times 10^{10}$ cm per second.
+
+\brian{$4.20\times 10^8$}
 
 4) Amoxicillin is an antibiotic commonly used to treat bacterial infections.
 When given to infants, the dosage must be carefully determined. The usual
 daily dosage for infants under 3 months old is 30.0 milligrams (mg) per kilogram
 (kg) of body weight. What mass of amoxicillin in milligrams should be given to
 an 8.00 lb infant in one day? (1 kg = 2.205 lb)
+
+\brian{109 mg}
 
 \end{document}
