@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+%
+% Packages and other includes
+% Pagination
+\usepackage[letterpaper, margin=1in]{geometry}
+
+%
+% Graphics, floats, tables
+\usepackage{graphicx, xcolor, float, array}
+\graphicspath{{image/}}
+%
+% Fonts
+\usepackage[T1]{fontenc} % best for Western European languages
+\usepackage{lmodern} % Latin Modern instead of CM
+\usepackage{textcomp} % required to get special symbols
+%
+% Math
+\usepackage{amsmath, amssymb}
+\usepackage{enumerate}
+\usepackage{braket}
+% 
+% Hyperlinks
+\usepackage[colorlinks,linkcolor={red},citecolor={blue},
+urlcolor={blue}]{hyperref} 
+%
+% Definitions and settings
+% Paragraph indent and spacing
+\setlength{\parskip}{0.4\baselineskip}
+\setlength{\parindent}{0in}
+%
+% Math mode version of "r" column type (requires array package)
+\newcolumntype{R}{>{$}r<{$}}
+\newcommand{\brian}[1]{{\color{orange}{#1}}}
+% Title, authors, date
+\title{\textbf{Homework 1}}
+\date{\vspace{-2em}\today}
+
+\begin{document}
+
+\maketitle 
+
+Weekly homework assignments are posted approximately one week prior to the
+due date. Collaborations are encouraged and students must report all collaborators
+in writing on each assignment. All external sources (websites, books) must be
+properly cited. Additional problems are listed at the end of each assignment.
+This week's assignment is due \textit{Fri, Sept 16th at 11:59pm.}
+
+\textbf{The Atom and Isotopes}
+
+1) True or false. If false, change the statement to make it true. (1 pt)
+
+\begin{itemize}
+\item If an atom has an unequal number of protons and electrons, it will be
+  charge-neutral.
+\item Electrons are attracted to protons.
+\item Protons and electrons ahve charges of the same magnitude but opposite
+  sign.
+\item Some atoms don't have any protons.
+\item Protons have twice the mass of neutrons.
+\item Electrons are much heavier than neutrons and protons.
+\end{itemize}
+
+\vspace{1in}
+
+\textbf{Conservation of Mass}
+
+2) A volatile liquid (one that readily evaporates) is put into a jar, and the
+jar is then sealed. Does the mass of the sealed jar and its content change
+upon the vaporization of the liquid? (1 pt)
+
+\pagebreak
+
+\textbf{Atomic Mass}
+
+3) An element has four naturally occurring isotopes with the masses and natural
+abundances given here. Find the atomic mass of the element and identify it. (1 pt)
+\begin{table}[hbpt]
+  \begin{tabular}{ccc}
+    Isotope & Mass (amu) & Abundance ($\%$) \\
+    \hline
+    1 & 135.90714 & 0.19 \\
+    2 & 137.90599 & 0.25 \\
+    3 & 139.90543 & 88.43\\
+    4 & 141.90924 & 11.11
+  \end{tabular}
+\end{table}
+
+\vspace{1in}
+
+4) Gallium has two naturally occurring isotopes with the following masses and
+natural abundances: (1 pt)
+\begin{table}[H]
+  \begin{tabular}{ccc}
+    Isotope & Mass (amu) & Abundance ($\%$) \\
+    \hline
+    Ga-69 & 68.92558 & 60.108 \\
+    Ga-71 & 70.92470 & 39.892
+  \end{tabular}
+\end{table}
+
+\vspace{1in}
+
+5) Silicon has three naturally occurring isotopes (Si-28, Si-29, and Si-30).
+The mass and natural abundance of Si-28 are 27.9769 amu and 92.2$\%$, respectively.
+The mass and natural abundance of Si-29 are 28.9765 amu and 4.67$\%$, respectively.
+Find the mass and natural abundance of Si-30. (1 pt)
+
+
+\vfill
+
+\textbf{Optional Textbook Problems:} Ch. 2- $2.31-2.79$ odd, $2.145-2.153$ odd
+
+\end{document}
