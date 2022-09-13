@@ -1,0 +1,77 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+%
+% Packages and other includes
+% Pagination
+\usepackage[letterpaper, margin=1in]{geometry}
+%
+% Graphics, floats, tables
+\usepackage{graphicx, color, float, array}
+\graphicspath{{image/}}
+%
+% Fonts
+\usepackage[T1]{fontenc} % best for Western European languages
+\usepackage{lmodern} % Latin Modern instead of CM
+\usepackage{textcomp} % required to get special symbols
+%
+% Math
+\usepackage{amsmath, amssymb}
+\usepackage{enumerate}
+\usepackage{braket}
+% 
+% Hyperlinks
+\usepackage[colorlinks,linkcolor={red},citecolor={blue},
+urlcolor={blue}]{hyperref} 
+%
+% Definitions and settings
+% Paragraph indent and spacing
+\setlength{\parskip}{0.4\baselineskip}
+\setlength{\parindent}{0in}
+%
+% Math mode version of "r" column type (requires array package)
+\newcolumntype{R}{>{$}r<{$}}
+% Title, authors, date
+\title{\textbf{Extra Scientific Notation and  Significant Figures Problem}}
+\date{Aug 23, 2022}
+
+\begin{document}
+
+\maketitle 
+
+\textbf{Scientific Notation}
+
+1) Perform the following calculations without your calculator. Report
+to 2 significant figures.
+
+a) $(4.0 \times 10^{-2})(1.5 \times 10^4)$
+
+b) $(3.0 \times 10^5)^2$
+
+c) $1.8 \times 10^4 - 8.9 \times 10^1$
+
+\textbf{Number of Significant Figures}
+
+2) Determine te number of significant figures in the following:
+
+a) 0.060580
+
+b) 6709.201
+
+c) 14800
+
+\textbf{Combining Operations and Significant Figures}
+
+3) Using a calculator, express the answers to the following calculations with
+the proper number of significant figures:
+
+a) $\frac{1202}{14.83 + 7.6}$
+
+b) $\frac{1.0 \times 10^{-2} \text{g} - 1.2 \times 10^{-3}\text{g}}{1.579 \times 10^{-1} \text{cm}}$
+
+c) $(9.2 \times 11.7) + 5.98$
+
+d) $(6.2 \text{g/mL} \times 1.95 \text{mL}) + 0.73 \text{g}$
+
+\end{document}
