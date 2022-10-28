@@ -1,0 +1,96 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+%
+% Packages and other includes
+% Pagination
+\usepackage[letterpaper, margin=1in]{geometry}
+
+%
+% Graphics, floats, tables
+\usepackage{graphicx, xcolor, float, array}
+\graphicspath{{image/}}
+%
+% Fonts
+\usepackage[T1]{fontenc} % best for Western European languages
+\usepackage{lmodern} % Latin Modern instead of CM
+\usepackage{textcomp} % required to get special symbols
+%
+% Math
+\usepackage{amsmath, amssymb}
+\usepackage{enumerate}
+\usepackage{braket}
+% 
+% Hyperlinks
+\usepackage[colorlinks,linkcolor={red},citecolor={blue},
+urlcolor={blue}]{hyperref} 
+%
+% Definitions and settings
+% Paragraph indent and spacing
+\setlength{\parskip}{0.4\baselineskip}
+\setlength{\parindent}{0in}
+%
+% Math mode version of "r" column type (requires array package)
+\newcolumntype{R}{>{$}r<{$}}
+\newcommand{\brian}[1]{{\color{orange}{#1}}}
+% Title, authors, date
+\title{\textbf{Homework 9}}
+\date{\vspace{-2em}\today}
+
+\begin{document}
+
+\maketitle 
+
+Weekly homework assignments are posted approximately one week prior to the
+due date. Collaborations are encouraged and students must report all collaborators
+in writing on each assignment. All external sources (websites, books) must be
+properly cited. Additional problems are listed at the end of each assignment.
+This week's assignment is due \textit{Friday, Nov 4th at 11:59pm.}
+
+\textbf{Rydberg Formula}
+
+The Rydberg formula is generalized for the hydrogen atomic spectra. It
+can be used to determine the wavelength of the transition between energy levels
+$n$ given by
+\begin{equation}
+  \frac{1}{\lambda} = R_H\Big(\frac{1}{n_f^2}-\frac{1}{n_i^2}\Big)
+  \label{eqn:rydberg}
+\end{equation}
+where $\lambda$ is the wavelength in m, $R_H$ is the Rydberg constant
+($1.097 \times 10^7$ m$^{-1}$), and the final and initial energy states $n_f$ and
+$n_i$, respectively. Use the formula to answer the following questions of the
+hydrogen spectra. Report all values to 3 significant figures.
+
+1) Using Eqn. \ref{eqn:rydberg}, determine the wavelength in nm of the electronic
+transition from $n=1$ to $n=3$. Is this wavelength the same for the transition from
+$n=3$ to $n=1$? (2 pts)
+
+\vspace{1.75in}
+
+2) For the $n=1$ to $n=3$ transition, what is the energy of a photon required for
+this transition? Is the energy being absorbed or released? (2 pts)
+
+\vspace{2in}
+
+3) For the $n=3$ to $n=1$ transition, what is the energy of a photon required for
+this transition? Is the energy being absorbed or released? (2 pts)
+
+\vspace{2in}
+
+4) Lines in an atomic emission spectrum are produced when an electron falls from
+a higher level to a lower level. For the $n=3$ to $n=1$ transition, what color
+of light does this transition emit? Use Fig. 7.8 on page 267 from the Bauer textbook
+to help determine the color. (2 pts)
+
+\vspace{2in}
+
+5) Compute the wavelength for the $n=1$ to $n=2$, $n=2$ to $n=3$, and $n=5$ to $n=6$ transitions.
+Compare the wavelengths. Draw a conclusion about the energy required for these transitions.
+(2 pts) 
+
+\vfill
+
+\textbf{Optional Textbook Problems:} Ch. 7- $7.9 - 7.35$ odd
+
+\end{document}
