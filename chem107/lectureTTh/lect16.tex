@@ -1,0 +1,145 @@
+\documentclass[11pt]{beamer}
+
+\usetheme{metropolis}
+
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{adjustbox}
+\usepackage{caption}
+\usepackage{chemformula}
+\usepackage{quoting}
+\usepackage[style=chem-angew,backend=bibtex]{biblatex}
+\bibliography{references}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+  \setbeamerfont{footnote}{size=\tiny}
+} 
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\graphicspath{{../lectureMW/image/}}
+
+\AtBeginSection[]{
+\begin{frame}{Outline}
+  \tableofcontents[currentsection]
+\end{frame}
+}
+
+\title{Review Chem Equations}
+\institute{Chemistry Department, Cypress College}
+\date{November 8, 2022}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Class Announcements}
+  \textbf{Lecture}
+  \begin{itemize}
+  \item Review Chemical Equations and Limiting Reagent problems
+  \item Work in groups and present the exam problems
+    (If we finish, everyone receive 2 EC pt in lieu of HW presentations)
+  \item Ch 7 - Electromagnetic Radiation
+  \item Quiz and Homework assignment released Fri, Nov 4th at 3pm
+  \end{itemize}
+\end{frame}
+
+\section{Review: Chemical Equation}
+
+\begin{frame}{Meaning of a Chemical Equation}
+  \begin{equation}
+    aA + bB \rightarrow cC + dD
+  \end{equation}
+  where $a$, $b$, $c$, and $d$ are coefficients for the reactants $A$/$B$
+  and products $C$/$D$
+  
+  \begin{itemize}
+  \item Provides the means to determine how much product is
+    produced for a given amount of reactants
+  \item Relate to molar masses, number of molecules, amount
+    of moles and masses
+  \end{itemize}    
+\end{frame}
+
+\begin{frame}{Analogy to Recipe Cookbook}
+  \begin{center}
+    \includegraphics[scale=0.11]{josh_weiss}
+  \end{center}
+
+  Analogy: \href{https://www.youtube.com/watch?v=T5SYu8tyKjM}{Cookbook recipe-
+    Popeyes Chicken but better}
+\end{frame}
+
+\begin{frame}{Photosynthesis}
+  \begin{equation}
+    6\text{CO$_2$(g)} + 6\text{H$_2$O(l)} \rightarrow \text{C$_6$H$_{12}$O$_6$(s)}
+    + 6\text{O$_2$(g)}
+  \end{equation}
+
+  \textbf{Properties}
+  \begin{itemize}
+  \item Balanced chemical equation satisfies the conservation of mass
+  \item Coefficients in front of the molecules represent the relative
+    moles of reactants and products
+  \item \textbf{Q:} How many moles of H$_2$O(l) are needed to react with 12
+    moles of CO$_2$(g)?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Practice: Ammonia Production}
+  Ammonia is produced using the Haber Bosch process.
+  How many moles of ammonia are produced if 2kg of hydrogen are reacted
+  with an excess of nitrogen?
+
+  2 N$_2$(g) + 3 H$_2$(g) $\rightarrow$ 2 NH$_3$(g)
+  \vspace{1.2in}
+\end{frame}
+
+\begin{frame}{Practice: Acid-Base Reaction}
+  Suppose you have 50mL of 1.5M HCl(aq) and you attempt to neutralize the
+  acid with 1M NaOH(aq). Write the balanced chemical reaction. Determine
+  what volume of 1M NaOH(aq) is needed.
+  \vspace{1.2in}
+\end{frame}
+
+\begin{frame}{Approaching Limiting Reactant Problems}
+  \begin{equation}
+    \text{R1} + \text{R2} \rightarrow \text{P1}
+  \end{equation}
+  \begin{itemize}
+  \item Given a certain amount of each reagents (R1 and R2)
+    to produce P1, determine
+    how much the R2 is needed to completely react with R1
+  \item Based on that calculated value, determine whether
+    there is enough R2 to completely react with R1
+  \item If the amount of R2 is less than what is needed,
+    then R2 is the limiting
+  \item If the amount of R2 is more than what is needed,
+    then R2 is the excess
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Practice: Limiting Reagent}
+  Consider respiration, it is the process of breaking down sugar molecules:
+
+  C$_6$H$_{12}$O$_6$(s) + 6 O$_2$(g) $\rightarrow$ 6 CO$_2$(g) + 6 H$_2$O
+
+  What mass of carbon dioxide forms in the reaction of 25 g of glucose
+  (C$_6$H$_{12}$O$_6$) with 40 g of oxygen?
+  \vspace{1.2in}
+\end{frame}
+
+\end{document}
