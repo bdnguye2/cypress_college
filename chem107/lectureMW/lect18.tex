@@ -1,0 +1,177 @@
+\documentclass[11pt]{beamer}
+
+\usetheme{metropolis}
+
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{adjustbox}
+\usepackage{caption}
+\usepackage{chemformula}
+\usepackage{quoting}
+\usepackage[style=chem-angew,backend=bibtex]{biblatex}
+\bibliography{references}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+  \setbeamerfont{footnote}{size=\tiny}
+} 
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\graphicspath{{image/}}
+
+\AtBeginSection[]{
+\begin{frame}{Outline}
+  \tableofcontents[currentsection]
+\end{frame}
+}
+
+\title{Chapter 8: Chemical Bonding}
+\institute{Chemistry Department, Cypress College}
+\date{Nov 9, 2022}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Class Announcements}
+  \textbf{Lab}
+  \begin{itemize}
+  \item Experiment 17 Lewis Structures and Molecular Models
+  \item Basic steps for lewis structures
+  \item Reminder - Need $70\%$ of laborator points to pass
+    the course
+  \end{itemize}
+
+  \textbf{Lecture}
+  \begin{itemize}
+  \item Finish up Ch 7 and begin Ch 8
+  \item Go over homework 9 (EC for students who present)
+  \item Quiz and Homework assignment released Fri, Nov 11th at 3pm
+  \end{itemize}
+\end{frame}
+
+\section{Review: }
+
+\begin{frame}{Principles for Filling Atomic Orbitals}
+  \textbf{Aufbau principle} - electrons fill an orbital starting with
+  the lowest energy level
+
+  \textbf{Pauli exclusion princple} - No two electrons with the same
+  spin can occupy the same orbital
+
+  \textbf{Hund's Rule} - Maximize the number of unpaired electrons
+\end{frame}
+
+\begin{frame}{Electron Configurations of Ions}
+  \textbf{Cations} - Remove electrons from the highest energy atomic
+  orbitals
+
+  \textbf{Anions} - Follow the same Aufbau principle by filling orbitals
+  with the lowest energy level
+
+  \onslide<2->{\textbf{Q:} For transition metals, which atomic orbitals, s or d,
+    do you begin removing electrons from?
+  }
+\end{frame}
+
+\section{Types of Bonds}
+
+\begin{frame}{Water is Life}
+  \centering
+  \includegraphics[width=0.4\linewidth]{water}
+  \includegraphics[width=0.4\linewidth,trim={0 6in 7in 0},clip]{molec_example}
+
+  \begin{itemize}
+  \item Liquid water made up of moles upon moles of water molecules
+  \item Molecules are made up of atoms connected by ``chemical bonds''
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{What are Chemical Bonds?}
+  \begin{center}
+    \includegraphics[width=0.8\linewidth]{single_elect_orb}
+  \end{center}
+  \textbf{Bonds are made up of atomic orbitals}
+  \begin{itemize}
+  \item Overlap of atomic orbitals lead to the formation of molecular
+    orbitals (same energy and specific orientation)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Example of p-orbitals}
+  \centering
+  \includegraphics[width=\linewidth]{p_sigma}
+  \begin{itemize}
+  \item Depending on the orientation, p-orbitals
+    will form a bond
+  \end{itemize}
+\end{frame}
+
+\subsection{Ionic and Covalent Bonds}
+
+\begin{frame}{Ionic Bonds}
+  \begin{center}
+    \includegraphics[width=0.6\linewidth]{nacl}
+  \end{center}
+  
+  \textbf{Ionic Compounds} - Made up of cation and anion
+
+  \textbf{Ionic Bonds} - Hold the cations and anions together;
+  purely electrostatic interaction
+
+  \onslide<2->{\textbf{Q:} For ionic bond, are the electrons shared
+    between the cation and anion?}
+\end{frame}
+
+\begin{frame}{Covalent Bonds}
+  \begin{center}
+    \includegraphics[width=0.6\linewidth]{molec_example}
+  \end{center}
+  \begin{itemize}
+  \item Electrons are shared between atoms to achieve
+    the octet rule
+  \item \textit{Note:} Octet rule can be broken for atoms
+    after the 3rd row e.g. P, S, Cl, etc.
+  \end{itemize}
+\end{frame}
+
+\subsection{Electronegativity}
+
+\begin{frame}{Electronegativity: Tug-of-War}
+  \centering
+  \includegraphics[width=0.8\linewidth]{water_tug}
+  \begin{itemize}
+  \item Sharing of electrons can lead to unequal pull
+    (electronegativity)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Electronegativity Trends}
+  \centering
+  \includegraphics[width=\linewidth]{electronegativity}
+\end{frame}
+
+\begin{frame}{Practice: Polarity}
+  \textbf{Which of the following is the most polar bond?}
+
+    C--C; C--H; N--H; O--H; F--H; Se--H
+\end{frame}
+
+\section{Drawing Lewis Structures}
+
+\section{VSEPR Theory}
+
+\end{document}
