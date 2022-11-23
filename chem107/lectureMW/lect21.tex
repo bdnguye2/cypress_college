@@ -1,0 +1,262 @@
+\documentclass[11pt]{beamer}
+
+\usetheme{metropolis}
+
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{adjustbox}
+\usepackage{caption}
+\usepackage{chemformula}
+\usepackage{quoting}
+\usepackage[style=chem-angew,backend=bibtex]{biblatex}
+\bibliography{references}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+  \setbeamerfont{footnote}{size=\tiny}
+} 
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\graphicspath{{image/}}
+
+\AtBeginSection[]{
+\begin{frame}{Outline}
+  \tableofcontents[currentsection]
+\end{frame}
+}
+
+\title{Chapter 9: Gaseous State}
+\institute{Chemistry Department, Cypress College}
+\date{Nov 23, 2022}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Class Announcements}
+  \textbf{Lab}
+  \begin{itemize}
+  \item Experiment 22 Titration
+  \item Recall: Acid-Base Reaction
+  \item Reminder - Need $70\%$ of laborator points to pass
+    the course
+  \end{itemize}
+
+  \textbf{Lecture}
+  \begin{itemize}
+  \item Finish up Ch 9 and lab practical review next Mon, Nov 28
+  \item Post quiz based on lab experiments Fri, Nov 25th
+  \item No Homework this week
+  \end{itemize}
+\end{frame}
+
+\section{Review: Boyle's Law, Charles' Law, and Avogadro's Hypothesis}
+
+\begin{frame}{Boyle's Law}
+  For a given mole of gas, the pressure and volume are inversely
+  proportional.
+  \begin{align}
+    PV = & \text{ constant} \\
+    P_1V_1 = & P_2V_2
+  \end{align}    
+\end{frame}
+
+\begin{frame}{Graphing Boyle's Law}
+  \centering
+  \includegraphics[width=0.9\linewidth]{boyle_graph}
+\end{frame}
+
+\begin{frame}{Charles' Law}
+  For a given mole of gas, the volume and temperature are directly
+  proportional
+  \begin{align}
+    \frac{V}{T} = & \text{ constant} \\
+    \frac{V_1}{T_1} = & \frac{V_2}{T_2}
+  \end{align}
+\end{frame}
+
+\begin{frame}{Graphing Charles' Law}
+  \centering
+  \includegraphics[width=0.6\linewidth]{charles_graph}
+\end{frame}
+
+\begin{frame}{Avogadro's Hypothesis}
+  At constant temperature and pressure, the volume and moles of gas
+  are directly proportional
+  \begin{align}
+    \frac{V}{n} = & \text{ constant} \\
+    \frac{V_1}{n_1} = & \frac{V_2}{n_2}
+  \end{align}
+\end{frame}
+
+\section{Ideal Gas Law}
+
+\begin{frame}{Ideal Gas Model}
+  \textbf{Assumptions}
+  \begin{itemize}
+  \item There is a large number of molecules that are
+    in random motion
+  \item Volume of the molecule is small relative to the volume occupied
+    by the gas
+  \item All molecules of a given gas are identical
+  \item There no interactions between molecules (intermolecular forces)
+  \item Collisions between gas molecules are perfectly elastic
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Ideal Gas Formula}
+  \begin{equation}
+    PV = nRT
+  \end{equation}
+  where $P$ is pressure (atm), $V$ is volume (L), $n$ moles of gas (mols),
+  $R$ is gas constant, and $T$ is temperature (K)
+
+  \onslide<2->{\textbf{Gas Constants} - Use the appropriate once based on the
+  units in the problem
+  \begin{align}
+    R = & 8,314.46\,\frac{\text{L Pa}}{\text{K mol}}
+    = 0.082057\,\frac{\text{L atm}}{\text{K mol}} \nonumber\\
+    = & 62.3636\,\frac{\text{L Torr}}{\text{K mol}} \nonumber
+  \end{align}
+  }
+\end{frame}
+
+\begin{frame}{Using Ideal Gas to Obtain Gas Laws}
+  \textbf{Boyle's Law} - hold $n$ and $T$ constant
+  \onslide<2->{\begin{align}
+    PV = & nRT \nonumber \\
+    PV = & \text{constant} \\
+    P_1V_1 = & P_2V_2 \nonumber
+    \end{align}
+  }
+  \onslide<3->{\textbf{Charles' Law} - hold $n$ and $P$ constant}
+  \onslide<4->{\begin{align}
+    PV = & nRT \nonumber \\
+    \frac{V}{T} = & \frac{nR}{P} = \text{constant} \\
+    \frac{V_1}{T_1} = & \frac{V_2}{T_2} \nonumber
+    \end{align}
+  }
+\end{frame}
+
+\begin{frame}{Practice: Avogadro's Hypothesis}
+  Obtain the Avogadro's hypothesis formula from the ideal gas law
+  ($PV = nRT$).
+  \vspace{1in}
+\end{frame}
+
+\begin{frame}{Practice: Using Ideal Gas}
+  Assuming ideal gas, what is the temperature for 2.10 moles of N$_2$ gas under
+  1.25 atm and in 25.0 L? ($R=0.082057$ (L atm)/(K mol))
+  \vspace{1in}
+\end{frame}
+
+\begin{frame}{Practice: Using Ideal Gas}
+  The volume of a propane cylinder is 0.960L. When filled, the cylinder contains
+  liquid propane stored under pressure. When the cylinder is ``empty,'' it contains
+  propane gas molecules at atmospheric ppressure and temperature. How many
+  moles of propane gas remain in a cylinder when it is empty if the surrounding
+  atmospheric conditions are 298K and 0.980atm.
+  \vspace{1.2in}
+\end{frame}
+
+\begin{frame}{Finding Density from Ideal Gas Law}
+  \textbf{Q:} What are the units for density?
+  \onslide<2->{\begin{align*}
+      PV = & nRT \\
+      \frac{n}{V} = & \frac{P}{RT}
+    \end{align*}
+    Given this ratio, the last step is to multiply by the molar
+    mass of the given substance
+  }
+  \onslide<3->{\begin{align*}
+      D = \frac{n\,MM}{RT}
+    \end{align*}
+    where $MM$ is the molar mass
+  }
+\end{frame}
+
+\begin{frame}{Finding Molar Mass from Ideal Gas Law}
+  \textbf{Q:} What are the units for molar mass?
+  \onslide<2->{\begin{align*}
+      PV = & nRT \\
+      n = & \frac{PV}{RT}
+    \end{align*}
+    Determine the moles and given the mass, divide by the moles
+  }
+\end{frame}
+
+\begin{frame}{Practice: Determine Density from Ideal Gas}
+  Calculate the density of butane at 298.15K and a pressure of
+  0.987atm. The gas constant is 0.08206 (L atm)/(K mol). %2.35 g/L
+  \vspace{1.5in}
+\end{frame}
+
+\begin{frame}{Practice: Determine Molar Mass from Ideal Gas}
+  A sample of the gas at a pressure of 0.960atm and a temperature of 290K weighs
+  0.289g in a flask with a volume of 157.0mL. The gas constant is 0.08206 (L atm)/(K mol).
+  Calculate the molar mass of the gas.
+  \vspace{1.5in}
+\end{frame}
+
+\section{Dalton's Law of Partial Pressures}
+
+\begin{frame}{Dalton's Law of Partial Pressures}
+  Gases in a mixture behave independently and exert the same pressure they would
+  exert if they were in a container alone
+  \begin{equation}
+    P_\text{Total} = P_A + P_B + P_C + \cdots
+  \end{equation}
+  where $P_\text{Total}$ is the total pressure and $P_A, P_B, \cdots$ are the
+  pressures of the components
+\end{frame}
+
+\begin{frame}{Practice: Dalton's Law of Partial Pressure}
+  Suppose gaseous oxygen (O$_2$) is produced by:
+
+  2KClO$_3$(s) $\rightarrow$ 2KCl(s) + 3O$_2$(g)
+
+  If 1.50L of O$_2$ is collected over water at 300.K and 0.970atm,
+  how many moles of O$_2$ is produced? The vapor pressure of water
+  is 0.0351atm.
+  \vspace{1.3in}
+\end{frame}
+
+\begin{frame}{Mole Fraction}
+  Expressing the relative amounts of substances in a mixture
+  \begin{equation}
+    \chi_A = \frac{n_A}{n_\text{Total}}
+  \end{equation}
+  where $\chi_A$ is the mole fraction of component A, $n_A$ is the
+  amount of moles for A, and $n_\text{Total}$ is the total amount of
+  moles in the mixture
+\end{frame}
+
+\begin{frame}{Dalton's Law of Partial Pressure}
+  Since each gas component exert its own pressure, the partial pressure
+  of each component can be expressed by
+  \begin{equation}
+    P_A = \chi_A P_\text{Total} = \frac{n_A}{n_\text{Total}} P_\text{Total}
+  \end{equation}
+\end{frame}
+
+\begin{frame}{Practice: Dalton's Law of Partial Pressures}
+  A flask contains a mixture of 1.25 mols of hydrogen gas and 2.90 moles
+  of oxygen gas. If the total pressure is 104.kPa, what is the partial
+  pressure of each gas?
+  \vspace{1.5in}
+\end{frame}
+
+\end{document}
