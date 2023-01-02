@@ -2,11 +2,11 @@ worksheets := $(patsubst %.tex,%.pdf,$(wildcard worksheet*.tex))
 # You want latexmk to *always* run, because make does not have all the info.
 # Also, include non-file targets in .PHONY so they are run regardless of any
 # file of the given name existing.
-.PHONY: $(worksheets) $(handout) syllabus.pdf all clean
+.PHONY: $(worksheets) all clean
 
 # The first rule in a Makefile is the one executed by default ("make"). It
 # should always be the "all" rule, so that "make" and "make all" are identical.
-all: $(worksheets) $(handout) syllabus.pdf
+all: $(worksheets) 
 
 # CUSTOM BUILD RULES
 
@@ -33,13 +33,10 @@ all: $(worksheets) $(handout) syllabus.pdf
 $(worksheets): %.pdf: %.tex
 	latexmk -pdflua -use-make $<
 	latexmk -pdflua -use-make \
-	-usepretex='\PassOptionsToClass{handout}{beamer}' \
-	-outdir=handout $<  
 
 syllabus.pdf: syllabus.tex
 	latexmk -pdflua -use-make $<
 
 clean:
 	latexmk -C
-	latexmk -C -outdir=handout
 	rm -f worksheet*.nav worksheet*.snm handout/*.nav handout/*.snm
